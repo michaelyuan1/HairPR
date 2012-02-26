@@ -107,7 +107,7 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'HairPR.urls'
 
 TEMPLATE_DIRS = (
-    'templates',
+    os.path.join(PROJECT_PATH, 'templates'),
 )
 
 INSTALLED_APPS = (
