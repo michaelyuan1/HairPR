@@ -6,6 +6,12 @@ PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'buhbuhbuhbuhbuhbuhbowser@gmail.com'
+EMAIL_HOST_PASSWORD = 'michael1'
+EMAIL_PORT = 587
+
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
