@@ -17,18 +17,13 @@
 <div class=clearfix>
 	<div id=content>
 		<article>
-        	<header>
-				<img src="{{ STATIC_URL }}static/prdonebetter.png">
-			</header>           
-			<footer>
-									
-				<form accept-charset="UTF-8" action="/submitEmail/" class="new_contact" id="new_contact" method="post">	
-					{% csrf_token %}
-					<div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="QU0nxNJ5dxLH7bIabIAI3BxiqJxcUlqSBY1TokpDOJs=" /></div>
-					<input autocomplete="true" id="contact_email" name="email" 		placeholder="buh@buh.buh" required="required" type="email" /><p/>													
-					<button class="button" type="submit"><span><span>Join the waiting list</span></span></button>																			      
-				</form>            
-			</footer>
+		    <header>
+                <h2>Thank You.<br />
+                You have been added to the waiting list.<br />
+                Please email <a href="mailto:info@airpr.com">info@hairpr.com</a> with any questions.
+                </h2>
+            </header>        
+							
 		</article>
 	</div>
 </div>

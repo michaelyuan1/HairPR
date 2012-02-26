@@ -5,4 +5,8 @@ from django.template import RequestContext
 from users.models import User
 
 def home(request):
-	return render_to_response('users/home.html')
+	return render_to_response('users/home.html', context_instance=RequestContext(request))
+	
+def submitEmail(request):
+	newUser = User(email=request.POST['email'])
+	return render_to_response('users/thankyou.html', context_instance=RequestContext(request))
