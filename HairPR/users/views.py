@@ -9,4 +9,5 @@ def home(request):
 	
 def submitEmail(request):
 	newUser = User(email=request.POST['email'])
+	newUser.save();
 	return render_to_response('users/thankyou.html', context_instance=RequestContext(request))
