@@ -10,6 +10,7 @@ between Java's lack of meaningful abstraction and Rails' magic. Serving the stat
 but luckily I didn't have to write any CSS or jQuery because that had already been written by some
 nice people. 
 
+
 To deploy this as a local copy, you will need python virtualenv, and python v 2.7
 Place your terminal in this root directory, where you found this file,
 and use the following commands, which will start virtualenv:
@@ -28,7 +29,7 @@ python HairPR/manage.py runserver
 
 which will run the server at localhost:8000
 
-
+To see all the emails, got to localhost:8000/admin, using password admin and username admin, and clicking on the second users tab.
 
 
 
